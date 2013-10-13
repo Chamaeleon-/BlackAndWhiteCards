@@ -18,7 +18,7 @@ black_cards = ["TSA guidelines now prohibit __________ on airplanes.","It's a pi
 black_cards2 = black_cards
 actual_black_card = ""
 playernumber = int(input())
-player = []
+name = ""
 playercards_all = []
 list_of_pairs = [] 
 points = {}
@@ -65,19 +65,18 @@ def players():
     for i in range(0,playernumber):
         print("Gebe jetzt einen Namen ein:")
         name = input()
-        player.append(name)
-    points = player.fromkeys(player[0])
+        points[name]=0
         
     
 
 def Awsomness(actual_black_card,w1,w2):
     pair = [b1,w1,w2]
     list_of_pairs.append(pair)
-    player = input()
-    points[player] = points[player]+1
+    name = input()
+    points[name] = points[name]+1
 
 players()
+print(player)
 print(points)
-
 
     
