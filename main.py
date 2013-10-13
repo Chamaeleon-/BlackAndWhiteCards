@@ -66,7 +66,7 @@ def players():
         print("Gebe jetzt einen Namen ein:")
         name = input()
         player.append(name)
-    points = p.fromkeys(player[0])
+    points = player.fromkeys(player[0])
         
     
 
